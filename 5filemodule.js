@@ -1,6 +1,7 @@
 var http = require("http");
 var fs = require("fs");
 
+//reading from file
 http
   .createServer(function (req, res) {
     fs.readFile("demofile1.html", function (err, data) {
