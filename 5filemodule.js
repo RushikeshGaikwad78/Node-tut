@@ -47,7 +47,14 @@ var fs = require("fs");
 //fs.appendFile() : appends specified content at the end of
 //the specified file
 
-fs.appendFile("mynewfile1.txt", " this my text", function (err) {
-  if (err) throw err;
-  console.log("Updated!!!");
-});
+// fs.appendFile("mynewfile1.txt", " this my text", function (err) {
+//   if (err) throw err;
+//   console.log("Updated!!!");
+// });
+
+//fs.writeFile() : replaces the specified file and content
+
+fs.writeFile('mynewfile3.txt','This is my text',function(err){
+    if(err) throw err;
+    console.log('Replaced!!');
+})
