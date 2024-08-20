@@ -59,11 +59,22 @@ var fs = require("fs");
 //     console.log('Replaced!!');
 // })
 
-
-{/*  ------- DELETE FILE ------ */}
+{
+  /*  ------- DELETE FILE ------ */
+}
 //fs.unlink()
 
-fs.unlink('mynewfile2.txt',function(err){
-    if(err) throw err;
-    console.log('File deleted!!!');
-})
+// fs.unlink('mynewfile2.txt',function(err){
+//     if(err) throw err;
+//     console.log('File deleted!!!');
+// })
+
+{
+  /* ---------- RENAME FILE ---------- */
+}
+//fs.rename()
+
+fs.rename("mynewfile1.txt", "myrenamedfile.txt", function (err) {
+  if (err) throw err;
+  console.log("File renamed!!!");
+});
