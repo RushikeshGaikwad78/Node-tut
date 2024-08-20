@@ -54,7 +54,16 @@ var fs = require("fs");
 
 //fs.writeFile() : replaces the specified file and content
 
-fs.writeFile('mynewfile3.txt','This is my text',function(err){
+// fs.writeFile('mynewfile3.txt','This is my text',function(err){
+//     if(err) throw err;
+//     console.log('Replaced!!');
+// })
+
+
+{/*  ------- DELETE FILE ------ */}
+//fs.unlink()
+
+fs.unlink('mynewfile2.txt',function(err){
     if(err) throw err;
-    console.log('Replaced!!');
+    console.log('File deleted!!!');
 })
